@@ -1,0 +1,254 @@
+
+KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop/C++
+$ git init
+Initialized empty Git repository in C:/Users/KARSHIL/Desktop/C++/.git/
+
+KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop/C++ (master)
+$ git add ReadMe.md
+fatal: pathspec 'ReadMe.md' did not match any files
+
+KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop/C++ (master)
+$ touch README.md
+
+KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop/C++ (master)
+$ git add README.md
+
+KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop/C++ (master)
+$ git commit -m "README.md is been committed"
+[master (root-commit) 889c3bc] README.md is been committed
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 README.md
+
+KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop/C++ (master)
+$ git remote add origin git@github.com:karshil2309/C++.git
+
+KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop/C++ (master)
+$ git push -u origin master
+The authenticity of host 'github.com (13.229.188.59)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no)? y
+Please type 'yes' or 'no': yes
+Warning: Permanently added 'github.com,13.229.188.59' (RSA) to the list of known hosts.
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop/C++ (master)
+$ curl -u 'USER' https://api.github.com/user/repos -d '{"name":"REPO"}'
+Enter host password for user 'USER':
+{
+  "message": "Bad credentials",
+  "documentation_url": "https://developer.github.com/v3"
+}
+
+KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop/C++ (master)
+$ curl -u 'karshil2309' https://api.github.com/user/repos -d '{"name":"REPO"}'
+Enter host password for user 'karshil2309':
+{
+  "id": 204148556,
+  "node_id": "MDEwOlJlcG9zaXRvcnkyMDQxNDg1NTY=",
+  "name": "REPO",
+  "full_name": "karshil2309/REPO",
+  "private": false,
+  "owner": {
+    "login": "karshil2309",
+    "id": 37497287,
+    "node_id": "MDQ6VXNlcjM3NDk3Mjg3",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/37497287?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/karshil2309",
+    "html_url": "https://github.com/karshil2309",
+    "followers_url": "https://api.github.com/users/karshil2309/followers",
+    "following_url": "https://api.github.com/users/karshil2309/following{/other_user}",
+    "gists_url": "https://api.github.com/users/karshil2309/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/karshil2309/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/karshil2309/subscriptions",
+    "organizations_url": "https://api.github.com/users/karshil2309/orgs",
+    "repos_url": "https://api.github.com/users/karshil2309/repos",
+    "events_url": "https://api.github.com/users/karshil2309/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/karshil2309/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "html_url": "https://github.com/karshil2309/REPO",
+  "description": null,
+  "fork": false,
+  "url": "https://api.github.com/repos/karshil2309/REPO",
+  "forks_url": "https://api.github.com/repos/karshil2309/REPO/forks",
+  "keys_url": "https://api.github.com/repos/karshil2309/REPO/keys{/key_id}",
+  "collaborators_url": "https://api.github.com/repos/karshil2309/REPO/collaborators{/collaborator}",
+  "teams_url": "https://api.github.com/repos/karshil2309/REPO/teams",
+  "hooks_url": "https://api.github.com/repos/karshil2309/REPO/hooks",
+  "issue_events_url": "https://api.github.com/repos/karshil2309/REPO/issues/events{/number}",
+  "events_url": "https://api.github.com/repos/karshil2309/REPO/events",
+  "assignees_url": "https://api.github.com/repos/karshil2309/REPO/assignees{/user}",
+  "branches_url": "https://api.github.com/repos/karshil2309/REPO/branches{/branch}",
+  "tags_url": "https://api.github.com/repos/karshil2309/REPO/tags",
+  "blobs_url": "https://api.github.com/repos/karshil2309/REPO/git/blobs{/sha}",
+  "git_tags_url": "https://api.github.com/repos/karshil2309/REPO/git/tags{/sha}",
+  "git_refs_url": "https://api.github.com/repos/karshil2309/REPO/git/refs{/sha}",
+  "trees_url": "https://api.github.com/repos/karshil2309/REPO/git/trees{/sha}",
+  "statuses_url": "https://api.github.com/repos/karshil2309/REPO/statuses/{sha}",
+  "languages_url": "https://api.github.com/repos/karshil2309/REPO/languages",
+  "stargazers_url": "https://api.github.com/repos/karshil2309/REPO/stargazers",
+  "contributors_url": "https://api.github.com/repos/karshil2309/REPO/contributors",
+  "subscribers_url": "https://api.github.com/repos/karshil2309/REPO/subscribers",
+  "subscription_url": "https://api.github.com/repos/karshil2309/REPO/subscription",
+  "commits_url": "https://api.github.com/repos/karshil2309/REPO/commits{/sha}",
+  "git_commits_url": "https://api.github.com/repos/karshil2309/REPO/git/commits{/sha}",
+  "comments_url": "https://api.github.com/repos/karshil2309/REPO/comments{/number}",
+  "issue_comment_url": "https://api.github.com/repos/karshil2309/REPO/issues/comments{/number}",
+  "contents_url": "https://api.github.com/repos/karshil2309/REPO/contents/{+path}",
+  "compare_url": "https://api.github.com/repos/karshil2309/REPO/compare/{base}...{head}",
+  "merges_url": "https://api.github.com/repos/karshil2309/REPO/merges",
+  "archive_url": "https://api.github.com/repos/karshil2309/REPO/{archive_format}{/ref}",
+  "downloads_url": "https://api.github.com/repos/karshil2309/REPO/downloads",
+  "issues_url": "https://api.github.com/repos/karshil2309/REPO/issues{/number}",
+  "pulls_url": "https://api.github.com/repos/karshil2309/REPO/pulls{/number}",
+  "milestones_url": "https://api.github.com/repos/karshil2309/REPO/milestones{/number}",
+  "notifications_url": "https://api.github.com/repos/karshil2309/REPO/notifications{?since,all,participating}",
+  "labels_url": "https://api.github.com/repos/karshil2309/REPO/labels{/name}",
+  "releases_url": "https://api.github.com/repos/karshil2309/REPO/releases{/id}",
+  "deployments_url": "https://api.github.com/repos/karshil2309/REPO/deployments",
+  "created_at": "2019-08-24T11:31:36Z",
+  "updated_at": "2019-08-24T11:31:36Z",
+  "pushed_at": "2019-08-24T11:31:36Z",
+  "git_url": "git://github.com/karshil2309/REPO.git",
+  "ssh_url": "git@github.com:karshil2309/REPO.git",
+  "clone_url": "https://github.com/karshil2309/REPO.git",
+  "svn_url": "https://github.com/karshil2309/REPO",
+  "homepage": null,
+  "size": 0,
+  "stargazers_count": 0,
+  "watchers_count": 0,
+  "language": null,
+  "has_issues": true,
+  "has_projects": true,
+  "has_downloads": true,
+  "has_wiki": true,
+  "has_pages": false,
+  "forks_count": 0,
+  "mirror_url": null,
+  "archived": false,
+  "disabled": false,
+  "open_issues_count": 0,
+  "license": null,
+  "forks": 0,
+  "open_issues": 0,
+  "watchers": 0,
+  "default_branch": "master",
+  "permissions": {
+    "admin": true,
+    "push": true,
+    "pull": true
+  },
+  "allow_squash_merge": true,
+  "allow_merge_commit": true,
+  "allow_rebase_merge": true,
+  "network_count": 0,
+  "subscribers_count": 1
+}
+
+KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop/C++ (master)
+$ git cgeckout master
+git: 'cgeckout' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop/C++ (master)
+$ git checkout master
+Already on 'master'
+
+KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop/C++ (master)
+$ git rm- r REPoO
+git: 'rm-' is not a git command. See 'git --help'.
+
+The most similar command is
+        rm
+
+KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop/C++ (master)
+$ git rm- r REPO
+git: 'rm-' is not a git command. See 'git --help'.
+
+The most similar command is
+        rm
+
+KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop/C++ (master)
+$ git rm -r REPO
+fatal: pathspec 'REPO' did not match any files
+
+KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop/C++ (master)
+$ git clone https://github.com/karshil2309/C-plus-plus-.git
+Cloning into 'C-plus-plus-'...
+warning: You appear to have cloned an empty repository.
+
+KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop/C++ (master)
+$ cd C-plus-plus-.git
+bash: cd: C-plus-plus-.git: No such file or directory
+
+KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop/C++ (master)
+$ cd C-plus-plus
+bash: cd: C-plus-plus: No such file or directory
+
+KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop/C++ (master)
+$ cd C-plus-plus-
+
+KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop/C++/C-plus-plus- (master)
+$ touch README.md
+
+KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop/C++/C-plus-plus- (master)
+$ git add .
+
+KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop/C++/C-plus-plus- (master)
+$ git commit -m "Some of the C++ Programs in turbo C"
+[master (root-commit) 1567a57] Some of the C++ Programs in turbo C
+ 19 files changed, 944 insertions(+)
+ create mode 100644 AREA_CIRCLE_CONSTRUCTORS.CPP
+ create mode 100644 BANK_APPLICATION_CONSTRUCTORS_DESTRUCTORS.CPP
+ create mode 100644 CALENDE_.CPP
+ create mode 100644 CONCATE_STRINGS.CPP
+ create mode 100644 COPYFILES_SOURCE_DESTINATION.CPP
+ create mode 100644 CURRENCY.CPP
+ create mode 100644 CURROVER.CPP
+ create mode 100644 DEFAULT_ARGUMENTS_PARAMTERIZED_CONSTRUCTOR.CPP
+ create mode 100644 FILE_OPEN_CLOSE.CPP
+ create mode 100644 FRIEND_FUNCTION.CPP
+ create mode 100644 INLINE_FUNCTIONS.CPP
+ create mode 100644 LINKED_L.CPP
+ create mode 100644 MINORBANK_APLLICATIONS.CPP
+ create mode 100644 OVERLOADING.CPP
+ create mode 100644 POWER_INBUILT_FUNCTION.CPP
+ create mode 100644 POWER_NO_USE_INBUILT_FUNCTIONS.CPP
+ create mode 100644 README.md
+ create mode 100644 SWAP_TEMPLATES.CPP
+ create mode 100644 TEMPLATE.CPP
+
+KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop/C++/C-plus-plus- (master)
+$ git -ls
+unknown option: -ls
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop/C++/C-plus-plus- (master)
+$ git push -u origin master
+Enumerating objects: 21, done.
+Counting objects: 100% (21/21), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (20/20), done.
+Writing objects: 100% (21/21), 7.33 KiB | 300.00 KiB/s, done.
+Total 21 (delta 0), reused 0 (delta 0)
+To https://github.com/karshil2309/C-plus-plus-.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop/C++/C-plus-plus- (master)
+$ touch git_file_remote
+
+KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop/C++/C-plus-plus- (master)
+$
