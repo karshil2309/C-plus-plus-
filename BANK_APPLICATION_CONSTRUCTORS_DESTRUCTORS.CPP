@@ -1,6 +1,6 @@
 /*
 		name:KARSHIL SHETH
-		dob:9-10-2017
+		doc:9-10-2017
 		OBJECTIVE:Bank Application USING CONSTRUCTOR AND DESTRUCTOR.
 		email:karshilsheth@gmail.com
 */
