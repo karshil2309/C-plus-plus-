@@ -1,29 +1,29 @@
 
 KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop/C++
-$ git init
+#$ git init
 Initialized empty Git repository in C:/Users/KARSHIL/Desktop/C++/.git/
 
 KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop/C++ (master)
-$ git add ReadMe.md
+#$ git add ReadMe.md
 fatal: pathspec 'ReadMe.md' did not match any files
 
 KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop/C++ (master)
-$ touch README.md
+#$ touch README.md
 
 KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop/C++ (master)
-$ git add README.md
+#$ git add README.md
 
 KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop/C++ (master)
-$ git commit -m "README.md is been committed"
+#$ git commit -m "README.md is been committed"
 [master (root-commit) 889c3bc] README.md is been committed
  1 file changed, 0 insertions(+), 0 deletions(-)
  create mode 100644 README.md
 
 KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop/C++ (master)
-$ git remote add origin git@github.com:karshil2309/C++.git
+#$ git remote add origin git@github.com:karshil2309/C++.git
 
 KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop/C++ (master)
-$ git push -u origin master
+#$ git push -u origin master
 The authenticity of host 'github.com (13.229.188.59)' can't be established.
 RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
 Are you sure you want to continue connecting (yes/no)? y
@@ -36,15 +36,7 @@ Please make sure you have the correct access rights
 and the repository exists.
 
 KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop/C++ (master)
-$ curl -u 'USER' https://api.github.com/user/repos -d '{"name":"REPO"}'
-Enter host password for user 'USER':
-{
-  "message": "Bad credentials",
-  "documentation_url": "https://developer.github.com/v3"
-}
-
-KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop/C++ (master)
-$ curl -u 'karshil2309' https://api.github.com/user/repos -d '{"name":"REPO"}'
+#$ curl -u 'karshil2309' https://api.github.com/user/repos -d '{"name":"REPO"}'
 Enter host password for user 'karshil2309':
 {
   "id": 204148556,
@@ -159,51 +151,30 @@ The most similar command is
         checkout
 
 KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop/C++ (master)
-$ git checkout master
+#$ git checkout master
 Already on 'master'
 
 KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop/C++ (master)
-$ git rm- r REPoO
-git: 'rm-' is not a git command. See 'git --help'.
-
-The most similar command is
-        rm
-
-KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop/C++ (master)
-$ git rm- r REPO
-git: 'rm-' is not a git command. See 'git --help'.
-
-The most similar command is
-        rm
-
-KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop/C++ (master)
-$ git rm -r REPO
-fatal: pathspec 'REPO' did not match any files
-
-KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop/C++ (master)
-$ git clone https://github.com/karshil2309/C-plus-plus-.git
+#$ git clone https://github.com/karshil2309/C-plus-plus-.git
 Cloning into 'C-plus-plus-'...
 warning: You appear to have cloned an empty repository.
 
 KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop/C++ (master)
-$ cd C-plus-plus-.git
+#$ cd C-plus-plus-.git
 bash: cd: C-plus-plus-.git: No such file or directory
 
 KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop/C++ (master)
-$ cd C-plus-plus
+#$ cd C-plus-plus
 bash: cd: C-plus-plus: No such file or directory
 
-KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop/C++ (master)
-$ cd C-plus-plus-
+KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop/C++/C-plus-plus- (master)
+#$ touch README.md
 
 KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop/C++/C-plus-plus- (master)
-$ touch README.md
+#$ git add .
 
 KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop/C++/C-plus-plus- (master)
-$ git add .
-
-KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop/C++/C-plus-plus- (master)
-$ git commit -m "Some of the C++ Programs in turbo C"
+#$ git commit -m "Some of the C++ Programs in turbo C"
 [master (root-commit) 1567a57] Some of the C++ Programs in turbo C
  19 files changed, 944 insertions(+)
  create mode 100644 AREA_CIRCLE_CONSTRUCTORS.CPP
@@ -227,7 +198,7 @@ $ git commit -m "Some of the C++ Programs in turbo C"
  create mode 100644 TEMPLATE.CPP
 
 KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop/C++/C-plus-plus- (master)
-$ git -ls
+#$ git -ls
 unknown option: -ls
 usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
            [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
@@ -236,7 +207,7 @@ usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
            <command> [<args>]
 
 KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop/C++/C-plus-plus- (master)
-$ git push -u origin master
+#$ git push -u origin master
 Enumerating objects: 21, done.
 Counting objects: 100% (21/21), done.
 Delta compression using up to 4 threads
@@ -248,7 +219,6 @@ To https://github.com/karshil2309/C-plus-plus-.git
 Branch 'master' set up to track remote branch 'master' from 'origin'.
 
 KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop/C++/C-plus-plus- (master)
-$ touch git_file_remote
+#$ touch git_file_remote
 
-KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop/C++/C-plus-plus- (master)
-$
+
