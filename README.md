@@ -17,5 +17,6 @@ The list of the practicals are as follows:-
 * Linked list for creating and Displaying
 * Use Power inbuilt function in C++
 * Swap Operations Using Templates in C++
-
-# git commands how I uploaded my files using git bash.
+```
+git commands how I uploaded my files using git bash.
+```
